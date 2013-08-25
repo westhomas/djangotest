@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <h1>{{ thingster.Group }}</h1>
+    <ul>
+    {% for i in things %}
+        <li>{{ i.Name }} - {{ i.body }}</li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <ul>
+    {% for i in list %}
+        <li><a href="{% url 'thingster' i.Group %}">{{ i.Group }}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
