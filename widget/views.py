@@ -1,7 +1,5 @@
 from django.shortcuts import render_to_response
 
-from .models import *
-
 def list(request):
 
   l = thingster.objects.all()
